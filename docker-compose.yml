@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+    app:
+        container_name: agt-backend-master-service
+        restart: on-failure
+        env_file:
+            - .env
+        build: .
+        ports:
+            - "3077:3077"
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+        network_mode: bridge
+        environment:
+            TZ: Asia/Kolkata

@@ -1,0 +1,115 @@
+
+        CUSTOM LOGGING AT 2025-04-07 11:13:48 - Auth ms is up and running on port: 3000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:14:09 - Auth ms is up and running on port: 3000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:15:12 - Auth ms is up and running on port: 3000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:15:46 - is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:16:03 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:16:21 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:18:00 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:19:04 - Prisma client initialized for:   ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:19:04 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:19:30 - Prisma client initialized for:   ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:19:30 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:19:32 - Prisma client initialized for:   ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:19:32 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:19:42 - Prisma client initialized for:   ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:19:42 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:19:51 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:19:51 - Prisma client initialized for:   ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:24:55 - Prisma client initialized for:   ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:24:55 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:33:14 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:33:14 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:33:14 - SQL := SELECT 1  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:33:14 - Test query result: [object Object]  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:33:57 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:33:57 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:34:01 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:34:01 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:34:08 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:34:08 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:34:18 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:34:18 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:35:29 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:35:29 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:36:30 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:36:30 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:37:27 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:37:27 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:38:51 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:38:51 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:39:05 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:39:05 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:39:05 - Connected to database  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:43:48 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:43:48 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:43:48 - Connected to database  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:47:44 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:47:44 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:47:44 - Connected to database  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:48:43 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:48:43 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:48:43 - Connected to database  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:49:51 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:49:51 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:49:51 - Connected to database  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:49:59 - Prisma client initialized for: testdb  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:49:59 - Server is up and running on port: 4000  ↵  
+    
+        CUSTOM LOGGING AT 2025-04-07 11:49:59 - Connected to database  ↵  
+    

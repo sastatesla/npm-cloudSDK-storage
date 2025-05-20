@@ -4,7 +4,7 @@ A plug-and-play, class-based TypeScript library to interact with multiple cloud
 storage providers (GCS, S3, Cloudinary, etc.) using a unified, extensible
 interface.
 
-**Version:** `1.0.5`
+**Version:** `1.0.6`
 
 ---
 
@@ -26,11 +26,10 @@ interface.
 
 ## Installation
 
-```bash
-npm install your-storage-package
+````bash
+npm i @sastatesla/cloud-storage-sdk
 # or
-yarn add your-storage-package
-```
+yarn @sastatesla/cloud-storage-sdk
 
 ---
 
@@ -39,7 +38,7 @@ yarn add your-storage-package
 ### 1. **Setup Configuration**
 
 ```typescript
-import {CloudStorage} from "your-storage-package"
+import {CloudStorage} from "@sastatesla/cloud-storage-sdk"
 const gcsKey = require("../gcs-key.json")
 
 // Example for Google Cloud Storage (GCS)
@@ -51,7 +50,7 @@ const storage = CloudStorage.init({
 	},
 	allowedFileTypes: ["image/jpeg", "image/png", "application/pdf"] // (Optional)
 })
-```
+````
 
 ---
 
@@ -94,7 +93,7 @@ library:
 ```typescript
 import express from "express"
 import multer from "multer"
-import {CloudStorage} from "your-storage-package"
+import {CloudStorage} from "@sastatesla/cloud-storage-sdk"
 
 const upload = multer({storage: multer.memoryStorage()})
 const router = express.Router()
@@ -263,7 +262,7 @@ Errors thrown by the library are **instances of `StorageError`** (or built-in
 `Error`).
 
 ```typescript
-import {StorageError} from "your-storage-package"
+import {StorageError} from "@sastatesla/cloud-storage-sdk"
 
 try {
 	await storage.upload("./myfile.pdf")

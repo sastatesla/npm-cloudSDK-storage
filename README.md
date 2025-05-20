@@ -308,18 +308,7 @@ obtain the file buffer for use with `uploadBuffer` or `uploadBulkBuffer`.**
 ### Can I use this with S3/Cloudinary/Other Providers?
 
 Currently, only GCS is implemented as an example.  
-To add more providers, extend the `StorageProvider` class and update the factory
-in `CloudStorage`.
-
----
-
-## Extending
-
-To add a new provider:
-
-1. Create a new class in `src/providers/` extending `StorageProvider`.
-2. Implement all abstract methods.
-3. Update the factory in `CloudStorage.ts` to include your new provider.
+Others will be added subsequently in newer version
 
 ---
 

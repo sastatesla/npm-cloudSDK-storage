@@ -1,24 +1,24 @@
 export type FileUploadOptions = {
-  destination?: string;
-  metadata?: Record<string, any>;
+	destination?: string
+	metadata?: Record<string, any>
 }
 
 export type FileInfo = {
-  id: String;
-  url: String;
-  provider: String;
-  metadata?: any;
+	id: String
+	url: String
+	provider: String
+	metadata?: any
 }
 
-type SupportedProviders = "gcs" | "s3" | "cloudinary";
+type SupportedProviders = "gcs" | "s3" | "cloudinary"
 
-export type CloudStorageConfig ={
-  provider: SupportedProviders;
-  config: any; 
-  allowedFileTypes?: string[];
+export type CloudStorageConfig = {
+	provider: SupportedProviders
+	config: any
+	allowedFileTypes?: string[]
 }
 
-export type GCSConfig  = {
-  bucketName: string;
-  credentials: object;
+export type GCSConfig = {
+	bucketName: string
+	credentials: object
 }

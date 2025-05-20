@@ -12,16 +12,14 @@ import eventEmitter from "./utils/logging"
 const app = express()
 const port: number = parseInt(process.env.PORT as string) || 5002
 
-
 // set security HTTP headers
 app.use(helmet())
- 
+
 // parse json request body
 app.use(express.json())
 
 // parse urlencoded request body
 app.use(express.urlencoded({extended: true}))
-
 
 // gzip compression
 app.use(compression())
@@ -31,9 +29,6 @@ app.options("*", cors())
 
 app.use(passport.initialize())
 passport.use("jwt", jwtStrategy)
-
-
-
 
 app.listen(port, async () => {
 	// get redis client

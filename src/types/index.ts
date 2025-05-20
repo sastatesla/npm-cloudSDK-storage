@@ -10,6 +10,11 @@ export type FileInfo = {
 	metadata?: any
 }
 
+export type BufferFileInfo = {
+	buffer: Buffer
+	originalname: string
+	mimetype: string
+}
 type SupportedProviders = "gcs" | "s3" | "cloudinary"
 
 export type CloudStorageConfig = {

@@ -4,7 +4,8 @@ import {
 	FileUploadOptions,
 	FileInfo,
 	GCSConfig,
-	CloudStorageConfig
+	CloudStorageConfig,
+	BufferFileInfo
 } from "../types/index"
 import {StorageError} from "../utils/error"
 import mimeLookup from "../helpers/helpers"
@@ -14,7 +15,7 @@ import crypto from "crypto"
 
 export class GCSProvider extends StorageProvider {
 	public async uploadBulkBuffer(
-		files: {buffer: Buffer; originalname: string; mimetype: string}[],
+		files: BufferFileInfo[],
 		options?: FileUploadOptions
 	): Promise<FileInfo[]> {
 		return Promise.all(
@@ -73,7 +74,7 @@ export class GCSProvider extends StorageProvider {
 
 	// NEW: Upload a file buffer (e.g., from multer memory storage)
 	public async uploadBuffer(
-		file: {buffer: Buffer; originalname: string; mimetype: string},
+		file: BufferFileInfo,
 		options?: FileUploadOptions
 	): Promise<FileInfo> {
 		try {

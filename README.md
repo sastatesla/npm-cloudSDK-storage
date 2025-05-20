@@ -75,6 +75,15 @@ await storage.delete("file.jpg");
 ```typescript
 await storage.createFolder("my-folder");
 ```
+### Upload File to a Folder
+
+Create (if necessary) and upload a file to a folder:
+
+```typescript
+await storage.createFolder("docs");
+const info = await storage.uploadToFolder("docs", "./file.pdf");
+console.log(info.url); // .../docs/file.pdf
+```
 
 ---
 

@@ -18,19 +18,19 @@ export class CloudStorage {
 
 		switch (config.provider) {
 			case "gcs":
-				// @ts-ignore
 				return new CloudStorage(
+					// @ts-ignore
 					new GCSProvider(config.config, config.allowedFileTypes)
 				)
 			case "s3":
-				// @ts-ignore
 				return new CloudStorage(
+					// @ts-ignore
 					new S3Provider(config.config, config.allowedFileTypes)
 				)
 
 			case "do-spaces":
-				// @ts-ignore
 				return new CloudStorage(
+					// @ts-ignore
 					new DOSpacesProvider(config.config, config.allowedFileTypes)
 				)
 			// case "cloudinary":

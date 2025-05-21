@@ -42,6 +42,8 @@
 	"dependencies": {
 		"@google-cloud/storage": "^7.16.0",
 		"@prisma/client": "^6.5.0",
+		"@types/aws-sdk": "^0.0.42",
+		"aws-sdk": "^2.1692.0",
 		"bcryptjs": "^3.0.2",
 		"compression": "^1.8.0",
 		"dotenv": "^16.4.7",

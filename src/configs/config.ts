@@ -19,21 +19,7 @@ const envVarsSchema = Joi.object()
 		JWT_ACCESS_EXPIRATION_MINUTES: Joi.number().default(30),
 		JWT_REFRESH_EXPIRATION_DAYS: Joi.number().default(30),
 		JWT_RESET_PASSWORD_EXPIRATION_MINUTES: Joi.number().default(10),
-		JWT_VERIFY_EMAIL_EXPIRATION_MINUTES: Joi.number().default(10),
-
-		// Email
-		SMTP_HOST: Joi.string().allow(""),
-		SMTP_PORT: Joi.number().allow(null),
-		SMTP_USERNAME: Joi.string().allow(""),
-		SMTP_PASSWORD: Joi.string().allow(""),
-		EMAIL_FROM: Joi.string().email().allow(""),
-
-		// Database
-		DB_USER: Joi.string().required(),
-		DB_PASSWORD: Joi.string().required(),
-		DB_HOST: Joi.string().required(),
-		DB_PORT: Joi.number().default(5432),
-		MAIN_DB_NAME: Joi.string().required()
+		JWT_VERIFY_EMAIL_EXPIRATION_MINUTES: Joi.number().default(10)
 	})
 	.unknown()
 

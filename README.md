@@ -1,10 +1,7 @@
-# CloudStorage - Universal Cloud Storage Wrapper
+# CloudStorage - Universal Storage Wrapper
 
 A plug-and-play, class-based TypeScript library to interact with multiple cloud
-storage providers (GCS, S3, Cloudinary, etc.) using a unified, extensible
-interface.
-
-**Version:** `1.0.6`
+storage providers (GCS, S3, Spaces, etc.) using a unified, extensible interface.
 
 ---
 
@@ -212,17 +209,64 @@ console.log(result.url) // .../images/my-image.png
 
 | Option           | Type           | Description                                                 |
 | ---------------- | -------------- | ----------------------------------------------------------- |
-| provider         | string         | `"gcs"`, `"s3"`, `"cloudinary"` (more coming soon)          |
+| provider         | string         | `"gcs"`, `"s3"`, `"do-spaces"` (more coming soon)           |
 | config           | object         | Provider-specific config (see below)                        |
 | allowedFileTypes | string[] (opt) | Allowed MIME types (e.g. `["image/png"]`). If omitted, any. |
 
 #### **GCS Example Config**
 
 ```typescript
-{
-  bucketName: "your-bucket",
-  credentials: require("./gcs-key.json"),
-}
+import fs from "fs"
+import {CloudStorage} from "your-storage-package"
+
+// Read and parse the credentials JSON file as an object
+const gcsCredentials = JSON.parse(
+	fs.readFileSync(process.env.GCS_CREDENTIALS_PATH!, "utf-8")
+)
+
+const storage = CloudStorage.init({
+	provider: "gcs",
+	config: {
+		bucketName: process.env.GCS_BUCKET!,
+		credentials: gcsCredentials
+	},
+	allowedFileTypes: ["image/jpeg", "image/png", "application/pdf"] // optional
+})
+```
+
+#### AWS S3 Example Config
+
+```typescript
+import {CloudStorage} from "your-storage-package"
+
+const storage = CloudStorage.init({
+	provider: "s3",
+	config: {
+		region: process.env.AWS_REGION!,
+		accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
+		secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
+		bucketName: process.env.S3_BUCKET!
+	},
+	allowedFileTypes: ["image/jpeg", "image/png", "application/pdf"]
+})
+```
+
+#### DigitalOcean Spaces Example Config
+
+```typescript
+import {CloudStorage} from "your-storage-package"
+
+const storage = CloudStorage.init({
+	provider: "do-spaces",
+	config: {
+		region: "nyc3",
+		endpoint: "nyc3.digitaloceanspaces.com",
+		accessKeyId: process.env.DO_SPACES_KEY!,
+		secretAccessKey: process.env.DO_SPACES_SECRET!,
+		bucketName: process.env.DO_SPACES_BUCKET!
+	},
+	allowedFileTypes: ["image/jpeg", "image/png", "application/pdf"] // optional
+})
 ```
 
 ---
@@ -304,9 +348,9 @@ obtain the file buffer for use with `uploadBuffer` or `uploadBulkBuffer`.**
 
 **Yes!** Use the `allowedFileTypes` option with an array of MIME types.
 
-### Can I use this with S3/Cloudinary/Other Providers?
+### Can I use this with S3/Spaces/cloudinary/Other Providers?
 
-Currently, only GCS is implemented as an example.  
+Currently, GCS, S2 and Spaces is implemented as an example.  
 Others will be added subsequently in newer version
 
 ---

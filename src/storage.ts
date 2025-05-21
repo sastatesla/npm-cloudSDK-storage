@@ -1,6 +1,7 @@
 import {StorageProvider} from "./providers/storageProvider"
 import {GCSProvider} from "./providers/gcsProvider"
-// import { S3Provider } from "../providers/S3Provider";
+import {S3Provider} from "./providers/s3Provider"
+import {DOSpacesProvider} from "./providers/doSpacesProvider"
 // import { CloudinaryProvider } from "../providers/CloudinaryProvider";
 import {FileUploadOptions, FileInfo, CloudStorageConfig} from "./types/index"
 import {parseCloudStorageConfig} from "./utils/inputParser"
@@ -17,12 +18,21 @@ export class CloudStorage {
 
 		switch (config.provider) {
 			case "gcs":
-				// @ts-ignore
 				return new CloudStorage(
+					// @ts-ignore
 					new GCSProvider(config.config, config.allowedFileTypes)
 				)
-			// case "s3":
-			//   return new CloudStorage(new S3Provider(config.config));
+			case "s3":
+				return new CloudStorage(
+					// @ts-ignore
+					new S3Provider(config.config, config.allowedFileTypes)
+				)
+
+			case "do-spaces":
+				return new CloudStorage(
+					// @ts-ignore
+					new DOSpacesProvider(config.config, config.allowedFileTypes)
+				)
 			// case "cloudinary":
 			//   return new CloudStorage(new CloudinaryProvider(config.config));
 			default:
